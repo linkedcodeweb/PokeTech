@@ -2,7 +2,7 @@
 Bienvenidos al compendio de herramientas Pokémon, donde enontrarás multitud de utilidades.
 <br>
 
-[![Web](https://img.shields.io/badge/Web-PokéTech.com-e99000?style=for-the-badge&logo=dev.to&logoColor=white&labelColor=101010)](https://mouredev.com)
+[![Web](https://img.shields.io/badge/Web-poketech.vercel.app-e99000?style=for-the-badge&logo=dev.to&logoColor=white&labelColor=101010)](https://poketech.vercel.app/)
 
 
 <br>
