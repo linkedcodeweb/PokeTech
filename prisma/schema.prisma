@@ -1,0 +1,38 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model change_users {
+  uuid           String   @id @default(dbgenerated("uuid_generate_v4()")) @db.Uuid
+  uuid_user      String   @db.Uuid
+  field_modified String
+  old_value      String
+  new_value      String
+  change_date    DateTime @default(now()) @db.Timestamp(6)
+}
+
+model delete_users {
+  uuid          String   @id @default(dbgenerated("uuid_generate_v4()")) @db.Uuid
+  uuid_user     String   @db.Uuid
+  email         String
+  username      String
+  name          String
+  register_date DateTime @db.Timestamp(6)
+  delete_date   DateTime @default(now()) @db.Timestamp(6)
+}
+
+model users {
+  uuid          String   @id @default(dbgenerated("uuid_generate_v4()")) @db.Uuid
+  email         String   @unique
+  username      String   @unique
+  password      String
+  name          String
+  avatar_path   String?  @default("user.webp")
+  save_pokemon  Int[]
+  register_date DateTime @default(now()) @db.Timestamp(6)
+}
