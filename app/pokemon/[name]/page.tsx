@@ -36,7 +36,7 @@ async function page({ params }: { params: { name: string } }) {
   return (
     <div className="grid gap-10">
       {/* Pokemon */}
-      <section className="grid grid-cols-3 rounded-xl bg-pokeGreen-900/90">
+      <section className="grid xl:grid-cols-3 rounded-xl bg-pokeGreen-900/90">
         <Image
           src={getImagePokemon(
             dataPokemon.sprites.other["official-artwork"].front_default
@@ -44,12 +44,12 @@ async function page({ params }: { params: { name: string } }) {
           alt="Pokemon"
           width="450"
           height="450"
-          className="place-self-center row-span-2 -m-16 drop-shadow-[2px_2px_rgba(0,0,0)]"
+          className="place-self-center xl:row-span-2 xl:-m-16 drop-shadow-[2px_2px_rgba(0,0,0)]"
         />
-        <div className="col-start-2 col-end-4 justify-self-end h-fit m-3">
+        <div className="xl:col-start-2 xl:col-end-4 order-first xl:order-none justify-self-end h-fit m-3">
           <ToggleFavorite id={dataPokemon.id} sessionFav={sessionFav} />
         </div>
-        <article className="col-start-2 col-end-4 m-9 p-2">
+        <article className="xl:col-start-2 xl:col-end-4 m-9 p-2">
           <header className="flex justify-between items-center">
             <h1 className="uppercase text-3xl font-bold">
               {dataPokemon.name.replaceAll("-", " ")}
@@ -67,7 +67,7 @@ async function page({ params }: { params: { name: string } }) {
       </section>
 
       {/* Stats / Charcaterics */}
-      <section className="grid grid-cols-2 gap-10">
+      <section className="grid xl:grid-cols-2 gap-10">
         <Container title="Estadísticas">
           <div className="p-5">
             <ProgresBar dataPokemon={dataPokemon} />
@@ -109,9 +109,9 @@ async function page({ params }: { params: { name: string } }) {
       </section>
 
       {/* Rugido / Types / Specials */}
-      <section className="grid grid-cols-3 gap-10">
+      <section className="grid xl:grid-cols-3 gap-10">
         <Container title="Rugido">
-          <div className="grid place-content-center min-h-full">
+          <div className="grid place-content-center min-h-full p-4">
             <audio src={dataPokemon.cries.latest} controls />
           </div>
         </Container>
@@ -155,7 +155,7 @@ async function page({ params }: { params: { name: string } }) {
       </section>
 
       {/* Sprites */}
-      <section className="grid grid-cols-2 gap-10">
+      <section className="grid xl:grid-cols-2 gap-10">
         <Container title="Sprites">
           <div className="grid grid-cols-2 place-content-center justify-items-center p-10">
             <Image

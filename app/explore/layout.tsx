@@ -8,11 +8,11 @@ export default async function Layout({
 }) {
   const data = (await getField("type")).results;
   return (
-    <div className="grid grid-cols-4 gap-6">
-      <aside className="sticky top-0 h-screen p-3 text-base rounded-xl bg-pokeGreen-900/90">
+    <div className="grid lg:grid-cols-4 gap-6">
+      <aside className="p-3 text-base rounded-xl bg-pokeGreen-900/90">
         <ToggleType data={data} />
       </aside>
-      <section className="col-span-3 min-h-full rounded-xl bg-pokeGreen-900/90">
+      <section className="lg:col-span-3 min-h-full rounded-xl bg-pokeGreen-900/90">
         {children}
       </section>
     </div>

@@ -33,7 +33,7 @@ async function RelevantPokemon() {
       </header>
 
       <Link href={`/pokemon/${dataPokemon.name}`}>
-        <article className="grid grid-cols-3 rounded-b-xl">
+        <article className="grid xl:grid-cols-3 rounded-b-xl">
           <Image
             src={getImagePokemon(
               dataPokemon.sprites.other["official-artwork"].front_default
@@ -41,10 +41,10 @@ async function RelevantPokemon() {
             alt="Relevant Pokémon"
             width="500"
             height="500"
-            className="self-center absolute -ml-20 drop-shadow-[2px_2px_rgba(0,0,0)]"
+            className="self-center xl:absolute xl:-ml-20 drop-shadow-[2px_2px_rgba(0,0,0)]"
           />
 
-          <div className="col-start-2 col-span-2 p-10 text-2xl">
+          <div className="xl:col-start-2 xl:col-span-2 p-10 text-2xl">
             <div className="flex justify-between">
               <h1 className="uppercase text-4xl">
                 {dataPokemon.name.replaceAll("-", " ")}

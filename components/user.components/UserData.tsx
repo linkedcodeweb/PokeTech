@@ -10,22 +10,25 @@ const UserData = async () => {
   return (
     <div
       key={user.uuid}
-      className="grid grid-cols-2 gap-6 justify-center w-full p-10"
+      className="grid lg:grid-cols-2 gap-6 lg:justify-center w-full p-10"
     >
       <div className="p-2">
         <p>
-          Nombre de usuario: <span>{user.username}</span> <UpdateUsername />
+          Nombre de usuario: <span>{user.username}</span> 
         </p>
+        <UpdateUsername />
       </div>
       <div className="p-2">
         <p>
-          Nombre: <span>{user.name}</span> <UpdateName />
+          Nombre: <span>{user.name}</span> 
         </p>
+        <UpdateName />
       </div>
       <div className="p-2">
         <p>
-          Dirección email: <span>{user.email}</span> <UpdateEmail />
+          Dirección email: <span>{user.email}</span> 
         </p>
+        <UpdateEmail />
       </div>
     </div>
   );

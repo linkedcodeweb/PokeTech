@@ -40,7 +40,7 @@ function DeleteUser() {
       <Collapsible
         open={isOpen}
         onOpenChange={setIsOpen}
-        className="w-1/3 p-4 space-y-2 border-2 rounded-xl border-pokeWarning-900 bg-pokeWarning-800/20"
+        className="lg:w-1/3 p-4 space-y-2 border-2 rounded-xl border-pokeWarning-900 bg-pokeWarning-800/20"
       >
         <div className="flex items-center justify-between space-x-4 px-4 ">
           <p className="text-xl">Eliminar la cuenta</p>

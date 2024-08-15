@@ -6,7 +6,7 @@ const Username = async () => {
   const user = await getUserById();
 
   return (
-    <article className="grid grid-cols-3 p-6 rounded-b-xl">
+    <article className="grid md:grid-cols-3 p-6 rounded-b-xl">
       <Image
         src={"/profile/" + user.avatar_path} //imagen de perfil del user
         alt="Foto Perfil"
@@ -15,7 +15,7 @@ const Username = async () => {
         className="size-48 mx-auto object-cover border-4 rounded-full border-white"
       />
 
-      <header className="col-start-2 col-span-2 p-10 text-3xl font-bold">
+      <header className="md:col-start-2 md:col-span-2 p-10 text-3xl font-bold">
         <h1 className="text-3xl font-bold text-white ">{user.username}</h1>
         <div className="w-full h-3 my-1 rounded-2xl bg-gradient-to-r from-pokeYellow-600" />
       </header>

@@ -29,10 +29,10 @@ const SearchBar = ({ placeholder }: { placeholder: string }) => {
   }
 
   return (
-    <div className="flex flex-shrink-0 relative h-10 text-black ">
+    <label className="flex flex-shrink-0 relative h-10 text-black ">
       <input
         name="search"
-        className="block w-full py-[9px] pl-10 rounded-xl placeholder:text-gray-500 border border-gray-200 peer"
+        className="w-full py-[9px] px-10 rounded-xl placeholder:text-gray-500 border border-gray-200 peer"
         placeholder={placeholder}
         onKeyDown={(e) => {
           if (e.key === "Enter") {
@@ -42,7 +42,7 @@ const SearchBar = ({ placeholder }: { placeholder: string }) => {
         defaultValue={searchParams.get("query")?.toString()}
       />
       <MagnifyingGlassIcon className="absolute size-6 left-3 top-1/2 -translate-y-1/2 text-gray-500 peer-focus:text-pokeYellow-800" />
-    </div>
+    </label>
   );
 };
 

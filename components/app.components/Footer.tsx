@@ -13,8 +13,8 @@ function Footer() {
           GitHub
         </Link>
       </article>
-      <article className="grid grid-cols-5 place-items-center p-6 bg-pokeGreen-900">
-        <p className="col-span-2 justify-self-end text-right">
+      <article className="grid xl:grid-cols-5 place-items-center gap-4 p-6 bg-pokeGreen-900">
+        <p className="xl:col-span-2 xl:justify-self-end text-center">
           Web desarrollada por Linked Code
         </p>
         <Image
@@ -23,7 +23,7 @@ function Footer() {
           width={130}
           height={130}
         />
-        <p className="col-span-2">
+        <p className="xl:col-span-2 xl:justify-self-start text-center">
           Todos los derechos pertenecen a sus respectivos dueños
         </p>
       </article>
