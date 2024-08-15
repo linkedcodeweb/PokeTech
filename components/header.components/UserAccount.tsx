@@ -14,7 +14,7 @@ const UserAccount = () => {
       <Link href={"/profile"}>
         <Button variant={"poke"}>
           <UserIcon width={"25"} />
-          &nbsp;&nbsp; Mi perfil
+          Mi perfil
         </Button>
       </Link>
       <Button
@@ -27,7 +27,7 @@ const UserAccount = () => {
         variant={"pokeOut"}
       >
         <ArrowRightStartOnRectangleIcon width={"25"} />
-        &nbsp;&nbsp; Cerrar Sesión
+        Cerrar Sesión
       </Button>
     </>
   );

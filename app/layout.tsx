@@ -28,7 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es" className={`${fredoka.variable} ${play.variable}`}>
-      <body className="flex flex-col justify-between min-w-full min-h-screen text-xl text-white bg-[url('/image/bgWide.jpg')] bg-no-repeat bg-contain bg-top bg-pokeGreen-800">
+      <body className="flex flex-col justify-between min-w-full min-h-screen text-xl text-white bg-[url('/image/bgWide.jpg')] bg-no-repeat bg-aumented md:bg-contain bg-top bg-pokeGreen-800">
         <SessionProvider>
           <header className="absolute min-w-full">
             <Header />

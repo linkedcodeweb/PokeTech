@@ -5,7 +5,7 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-950 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 dark:ring-offset-slate-950 dark:focus-visible:ring-slate-300",
+  "flex items-center justify-center whitespace-nowrap rounded-md text-sm gap-1 font-medium",
   {
     variants: {
       variant: {
@@ -20,14 +20,14 @@ const buttonVariants = cva(
         ghost:
           "hover:bg-slate-100 hover:text-slate-900 dark:hover:bg-slate-800 dark:hover:text-slate-50",
         link: "text-slate-900 underline-offset-4 hover:underline dark:text-slate-50",
-        poke: "text-xl  bg-pokeYellow-800 text-pokeGreen-800 hover:bg-pokeYellow-600 mr-2",
+        poke: "text-xl  bg-pokeYellow-800 text-pokeGreen-800 hover:bg-pokeYellow-600",
         pokeLight:
-          "text-xl bg-pokeYellow-200 text-pokeGreen-800 hover:bg-pokeYellowy-600 mr-2",
+          "text-xl bg-pokeYellow-200 text-pokeGreen-800 hover:bg-pokeYellowy-600",
         pokeOut:
-          "bg-pokeWarning-800 text-white text-xl hover:bg-pokeWarning-700 hover:shadow-lg  hover:shadow-pokeWarning-900 transition-shadow duration-150 ease-in-out ",
+          "bg-pokeWarning-800 text-white text-xl  hover:bg-pokeWarning-700 hover:shadow-lg  hover:shadow-pokeWarning-900 transition-shadow duration-150 ease-in-out ",
       },
       size: {
-        default: "h-10 px-4 py-2 rounded-xl",
+        default: "h-10 px-3 py-2 rounded-xl",
         sm: "h-9 rounded-xl px-3",
         lg: "h-11 rounded-xl px-8",
         icon: "h-10 w-10",

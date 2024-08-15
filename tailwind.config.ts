@@ -74,6 +74,9 @@ const config = {
       backgroundImage: {
         "poke-img": "url('/image/bgProfile.jpg')",
       },
+      backgroundSize: {
+        'aumented': '200%',
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },
